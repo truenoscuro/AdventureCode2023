@@ -146,7 +146,7 @@ public class Puzzle1 {
 
     public static void demo() {
 
-        String text = FileUtils.demo(3, 1);
+        String text = FileUtils.demo(3);
 
         List<Integer> code = code(text);
 
@@ -158,7 +158,7 @@ public class Puzzle1 {
 
     public  static void solve(){
 
-        String text = FileUtils.content(3,1);
+        String text = FileUtils.content(3);
         System.out.println(
                 code(text).stream().reduce(Integer::sum).orElse(-1)
         );

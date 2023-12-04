@@ -5,19 +5,19 @@ import java.io.*;
 public class FileUtils {
 
     public static String absolutePath = "C:\\Users\\Nofre\\Desktop\\AdventureCode2023\\Adventure\\src";
-    public static String content(int dayNumber,int puzzleNumber ){
-        return  getTex(dayNumber,puzzleNumber,"input.txt");
+    public static String content(int dayNumber ){
+        return  getTex(dayNumber,"input.txt");
 
 
     }
 
-    public static String demo(int dayNumber,int puzzleNumber ){
-        return getTex(dayNumber,puzzleNumber,"demo.txt");
+    public static String demo(int dayNumber ){
+        return getTex(dayNumber,"demo.txt");
     }
 
-    private  static String getTex(int dayNumber,int puzzleNumber,String filename){
+    private  static String getTex(int dayNumber,String filename){
         try {
-            FileReader reader = new FileReader(absolutePath+"\\days\\day"+dayNumber+"\\"+"puzzle"+puzzleNumber+"\\resources\\"+filename);
+            FileReader reader = new FileReader(absolutePath+"\\days\\day"+dayNumber+"\\resources\\"+filename);
             BufferedReader bufferedReader = new BufferedReader(reader);
             String line;
             StringBuilder result= new StringBuilder();

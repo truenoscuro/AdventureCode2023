@@ -66,7 +66,7 @@ public class Puzzle2 {
     }
 
     public static void solve() {
-        String text = FileUtils.content(1, 2);
+        String text = FileUtils.content(1);
 
         text = convertTextToNumber(text);
         System.out.println(text);

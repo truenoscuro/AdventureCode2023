@@ -46,14 +46,14 @@ public class Puzzle2 {
 
     public static void demo() {
 
-        String text = FileUtils.demo(3, 2);
+        String text = FileUtils.demo(3);
 
         System.out.println(gearRatios(text).stream().reduce(Integer::sum).orElse(-1));
     }
 
     public static void solve() {
 
-        String text = FileUtils.content(3, 2);
+        String text = FileUtils.content(3);
         System.out.println(gearRatios(text).stream().reduce(Integer::sum).orElse(-1));
 
 

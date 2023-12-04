@@ -41,7 +41,7 @@ public class Puzzle2  {
     public static void solve() {
 
 
-        String text = FileUtils.content(2,2);
+        String text = FileUtils.content(2);
 
         System.out.println(potencialGame(text));
 
@@ -51,7 +51,7 @@ public class Puzzle2  {
 
     public static void demo() {
 
-        String text = FileUtils.demo(2,2);
+        String text = FileUtils.demo(2);
 
         System.out.println(potencialGame(text));
 

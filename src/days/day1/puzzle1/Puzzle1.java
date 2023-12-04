@@ -28,7 +28,7 @@ public class Puzzle1 {
     }
     public  static void  solve(){
 
-        String text = FileUtils.content(1,1);
+        String text = FileUtils.content(1);
 
 
         System.out.println(getTotal(text));

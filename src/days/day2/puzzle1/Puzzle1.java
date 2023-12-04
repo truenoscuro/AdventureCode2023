@@ -64,14 +64,14 @@ public class Puzzle1 {
     public static void demo() {
 
 
-        String text = FileUtils.demo(2, 1);
+        String text = FileUtils.demo(2);
 
         System.out.println(getSumGames(text));
 
     }
 
     public static void solve(){
-        String text  = FileUtils.content(2,1);
+        String text  = FileUtils.content(2);
 
         System.out.println(getSumGames(text));
     }
